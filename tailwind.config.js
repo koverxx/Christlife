@@ -5,6 +5,7 @@ export default {
     extend: {
       backgroundImage: (theme) => ({
         "custom-image": "url('/Images/background.png')",
+        "discover-bg": "url('/Images/discover.png')",
         fontFamily: {
           urbanist: ["Urbanist", "sans-serif"],
         },
