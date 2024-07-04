@@ -13,7 +13,7 @@
     <title>Christlife Church</title>
     <style>
       .faq-container {
-        border: 2px solid #16a34a;
+        border: 2px solid #128546;
         border-radius: 10px;
         overflow: hidden;
         position: relative;
@@ -43,6 +43,15 @@
       .faq-icon svg {
         transform: rotate(-90deg);
       }
+      .vertical-text {
+            writing-mode: vertical-rl;
+            transform: rotate(180deg);
+            text-orientation: mixed;
+        }
+        .border-text {
+            -webkit-text-stroke: 1px #128546;
+            color: white;
+        }
     </style>
   </head>
   <body
@@ -88,15 +97,11 @@
     </header>
 
     <main class="pt-0">
-      <div
-        class="start flex flex-col items-center justify-center lg:h-screen lg:py-0 py-[10%]"
-      >
-        <h1
-          class="text-white lg:text-[60px] lg:leading-[72px] text-[32px] leading-[38.4px]"
-        >
+      <div class="start flex flex-col items-center justify-center lg:h-screen lg:py-0 py-[10%]" style="background-image: url('Images/discover.png'); background-size: cover; background-position: center;">
+        <h1 class="text-white lg:text-[60px] lg:leading-[72px] text-[32px] leading-[38.4px]">
           Discover Our Story: Uniting in Faith, Serving with Love
         </h1>
-        <div class="bg-cover bg-discover-bg"></div>
+
       </div>
 
       <div
@@ -149,7 +154,10 @@
       >
         Who We Are
       </h1>
-      <div class="text-[#333333] flex flex-row justify-center space-x-4">
+      <div
+        class="text-[#333333] flex flex-row justify-center space-x-4"
+        style="margin-bottom: 8%"
+      >
         <div class="">
           <img src="Images/identity.png" alt="identity" class="w-1/4" />
           <h3
@@ -197,12 +205,12 @@
         </div>
       </div>
 
-      <div
-        class="bg-[#128546] w-[1135px] h-[327px] rounded-md text-white items-center flex flex-row px-[20] py-[10%] mt-[20%]"
-      >
-        <div>
+      <section
+        class="bg-[#128546] w-[1135px] h-[327px] rounded-lg shadow-lg text-white items-center flex flex-row mx-auto px-[10%] py-[10%] mt-[10%]"
+        style="max-width: 80%; margin: 10% auto 0; margin-bottom: 8%; ">
+        <div class="px-6">
           <h1
-            class="lg:text-[55px] lg:leading-[66px] text-[32px] leading-[38.4px] font-bold"
+            class="lg:text-[55px] lg:leading-[66px] text-[32px] leading-[38.4px] font-bold mb-4"
           >
             What we Believe
           </h1>
@@ -218,74 +226,69 @@
           </p>
         </div>
         <a
-          href="#plan"
-          class="btn-link text-sec px-6 py-3 border rounded-full hover:border focus:outline-none focus:border-green-600 transition duration-150 ease-in-out"
+          href="#visit"
+          class="inline-block px-6 py-2 border border-white rounded-full"
           >Visit Us</a
         >
+      </section>
+
+
+      <section class="flex justify-center items-start mt-10">
+      <div class="space-y-4 w-[50%] max-w-4xl mb-4 pb-4">
+      
+        <div class="faq-container bg-white p-5 relative justify-center">
+          <div
+            class="flex justify-between items-center mb-4 pb-4 border-b border-[#128546] rounded-lg"
+          >
+            <h2 class="lg:text-[45px] lg:leading-[54px] text-[20px] leading-[24px] font-bold">What time are your Sunday services?</h2>
+            <button
+              class="text-2xl font-bold focus:outline-none faq-button"
+              aria-expanded="true"
+            >x</button>
+          </div>
+          <p class="text-sm text-gray-600 leading-relaxed mb-4 faq-content">
+            Our Sunday services start at 9:00 AM. We also offer additional
+            services throughout the week. Visit page for the full schedule.
+          </p>
+  
+          <div
+            class="border border-[#128546] px-4 py-2 flex justify-between items-center cursor-pointer faq-toggle"
+          >
+            <h2 class="lg:text-[45px] lg:leading-[54px] text-[20px] leading-[24px] font-bold text-black">
+              Do you have programs for children and youth?
+            </h2>
+            <button class="text-2xl font-bold focus:outline-none">+</button>
+          </div>
+          <div
+            class="border border-[#128546] px-4 py-2 flex justify-between items-center cursor-pointer faq-toggle"
+          >
+            <h2 class="lg:text-[45px] lg:leading-[54px] text-[20px] leading-[24px] font-bold text-black">
+              How can I get involved in serving at the church?
+            </h2>
+            <button class="text-2xl font-bold focus:outline-none">+</button>
+          </div>
+          <div
+            class="border border-[#128546] px-4 py-2 pt-[2%] flex justify-between items-center cursor-pointer faq-toggle"
+          >
+            <h2 class="lg:text-[45px] lg:leading-[54px] text-[20px] leading-[24px] font-bold text-black">
+              Do you have programs for children and youth?
+            </h2>
+            <button class="text-2xl font-bold focus:outline-none">+</button>
+          </div>
       </div>
-
-      <div class="faq-container bg-white p-5 relative justify-center">
-        <div
-          class="flex justify-between items-center mb-4 pb-4 border-b border-green-500"
-        >
-          <h2 class="font-bold text-xl">What time are your Sunday services?</h2>
-          <button
-            class="text-2xl font-bold focus:outline-none faq-button"
-            aria-expanded="true"
-          >
-            ✖
-          </button>
-        </div>
-        <p class="text-sm text-gray-600 leading-relaxed mb-4 faq-content">
-          Our Sunday services start at 9:00 AM. We also offer additional
-          services throughout the week. Visit page for the full schedule.
-        </p>
-
-        <div
-          class="border-l border-t border-green-500 px-4 py-2 flex justify-between items-center cursor-pointer faq-toggle"
-        >
-          <h3 class="text-lg font-bold text-black">
-            Do you have programs for children and youth?
-          </h3>
-          <button class="text-2xl font-bold focus:outline-none">+</button>
-        </div>
-        <div
-          class="border-l border-t border-green-500 px-4 py-2 flex justify-between items-center cursor-pointer faq-toggle"
-        >
-          <h3 class="text-lg font-bold text-black">
-            How can I get involved in serving at the church?
-          </h3>
-          <button class="text-2xl font-bold focus:outline-none">+</button>
-        </div>
-        <div
-          class="border border-green-500 px-4 py-2 flex justify-between items-center cursor-pointer faq-toggle"
-        >
-          <h3 class="text-lg font-bold text-black">
-            Do you have programs for children and youth?
-          </h3>
-          <button class="text-2xl font-bold focus:outline-none">+</button>
-        </div>
-        <div class="faq-icon right-4">
-          <span class="block font-bold text-green-500 text-4xl tracking-widest"
-            >FAQ</span
-          >
-          <svg
-            class="w-10 h-10 text-green-500"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-            aria-hidden="true"
-          >
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
               d="M3 10h1M5 6h1M7 10h1M9 6h1M11 6h1M13 10h1M15 6h1M17 10h1M19 6h1M21 6h1M3 14h1M5 10h1M7 14h1M9 10h1M11 14h1M13 10h1M15 14h1M17 10h1M19 14h1M21 14h1M3 18h1M5 14h1M7 18h1M9 14h1M11 18h1M13 14h1M15 18h1M17 14h1M19 18h1M21 18h1"
             ></path>
-          </svg>
+
         </div>
+        <div class="vertical-text border-text text-[#128546] lg:text-9xl text-[48px] leading-[57.6px] font-bold mr-4">
+          FAQ
+        </div>
+  
       </div>
+    </section>
 
       <div class="section-five text-center text-2xl font-bold px-4 py-12">
         <h4
