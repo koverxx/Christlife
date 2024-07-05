@@ -8,7 +8,8 @@
       href="https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/style.css" />
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+     <link rel="stylesheet" href="style.css" /> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Christlife Church</title>
     <style>
@@ -55,7 +56,7 @@
     </style>
   </head>
   <body
-    class="font-urbanist min-h-screen bg-slate-50 dark:bg-[#333333] dark:text-white"
+    class="font-urbanist bg-slate-50 dark:bg-[#333333] dark:text-white"
   >
     <header
       class="bg-white text-black flex py-5 items-center justify-between px-[5%]"
@@ -96,8 +97,8 @@
       </button>
     </header>
 
-    <main class="pt-0">
-      <div class="start flex flex-col items-center justify-center lg:h-screen lg:py-0 py-[10%]" style="background-image: url('Images/discover.png'); background-size: cover; background-position: center;">
+    <div class="">
+      <div class="start flex flex-col items-center justify-center lg:h-screen lg:py-0 py-[10%] mb-[10%] bg-[url('Images/discover.png')] bg-cover" >
         <h1 class="text-white lg:text-[60px] lg:leading-[72px] text-[32px] leading-[38.4px]">
           Discover Our Story: Uniting in Faith, Serving with Love
         </h1>
@@ -105,9 +106,9 @@
       </div>
 
       <div
-        class="text-[#333333] flex flex-col lg:flex-row items-center gap-8 lg:gap-[8%]"
+        class="text-[#333333] flex flex-col lg:flex-row items-center gap-10 lg:gap-[10%] px-[10%]"
       >
-        <div class="text-lg px-5">
+        <div class="">
           <h1
             class="lg:text-[55px] lg:leading-[66px] text-[32px] leading-[38.4px] font-bold"
           >
@@ -122,15 +123,15 @@
             discipleship, and outreach.
           </p>
         </div>
-        <div class="w-full">
+        <div class="lg:w-full lg:h-[516px] w-full h-[385px]">
           <img src="Images/mission.png" alt="mission" />
         </div>
       </div>
 
       <div
-        class="text-[#333333] flex flex-col lg:flex-row items-center gap-4 lg:gap-[4%]"
+        class="text-[#333333] flex flex-col-reverse lg:flex-row items-center gap-10 lg:gap-[10%] px-[10%]"
       >
-        <div class="w-full px-6 py-[10%]">
+        <div class="lg:w-full lg:h-[516px] w-[360px] h-[383px]">
           <img src="Images/vision.png" alt="vision" />
         </div>
         <div>
@@ -150,18 +151,17 @@
       </div>
 
       <h1
-        class="lg:text-[55px] lg:leading-[66px] text-[32px] leading-[38.4px] font-bold text-[#333333] mb-[10%]"
+        class="lg:text-[55px] lg:leading-[66px] text-[32px] leading-[38.4px] font-bold text-[#333333] lg:p-[5%] px-[10%] mb-3"
       >
         Who We Are
       </h1>
       <div
-        class="text-[#333333] flex flex-row justify-center space-x-4"
-        style="margin-bottom: 8%"
+        class="text-[#333333] flex flex-col lg:flex-row justify-center gap-10 lg:gap-[5%] lg:px-[5%] px-[10%]"
       >
         <div class="">
-          <img src="Images/identity.png" alt="identity" class="w-1/4" />
+          <img src="Images/identity.png" alt="identity" class="w-full h-[309px]" />
           <h3
-            class="lg:text-[24px] lg:leading-[28.8px] text-[20px] leading-[24px] font-bold"
+            class="lg:text-[24px] lg:leading-[28.8px] text-[20px] leading-[24px] font-bold py-4"
           >
             Our Identity
           </h3>
@@ -174,9 +174,9 @@
           </p>
         </div>
         <div class="">
-          <img src="Images/family.png" alt="family" class="w-1/4" />
+          <img src="Images/family.png" alt="family" class="w-full h-[309px]" />
           <h3
-            class="lg:text-[24px] lg:leading-[28.8px] text-[20px] leading-[24px] font-bold"
+            class="lg:text-[24px] lg:leading-[28.8px] text-[20px] leading-[24px] font-bold py-4"
           >
             Our Family
           </h3>
@@ -189,9 +189,9 @@
           </p>
         </div>
         <div>
-          <img src="Images/commitment.png" alt="commitment" class="w-1/4" />
+          <img src="Images/commitment.png" alt="commitment" class="w-full h-[309px]" />
           <h3
-            class="lg:text-[24px] lg:leading-[28.8px] text-[20px] leading-[24px] font-bold"
+            class="lg:text-[24px] lg:leading-[28.8px] text-[20px] leading-[24px] font-bold py-4"
           >
             Our Commitment
           </h3>
@@ -206,8 +206,8 @@
       </div>
 
       <section
-        class="bg-[#128546] w-[1135px] h-[327px] rounded-lg shadow-lg text-white items-center flex flex-row mx-auto px-[10%] py-[10%] mt-[10%]"
-        style="max-width: 80%; margin: 10% auto 0; margin-bottom: 8%; ">
+        class="bg-[#128546] rounded-lg shadow-lg text-white items-center flex flex-col lg:flex-row lg:mx-[15%] mx-[5%] px-[5%] py-[5%] mt-[10%]"
+        >
         <div class="px-6">
           <h1
             class="lg:text-[55px] lg:leading-[66px] text-[32px] leading-[38.4px] font-bold mb-4"
@@ -227,14 +227,14 @@
         </div>
         <a
           href="#visit"
-          class="inline-block px-6 py-2 border border-white rounded-full"
+          class="w-1/2 text-center px-2 py-2 border border-white rounded-full mt-3 lg:mt-0"
           >Visit Us</a
         >
       </section>
 
 
-      <section class="flex justify-center items-start mt-10">
-      <div class="space-y-4 w-[50%] max-w-4xl mb-4 pb-4">
+      <section class="flex flex-col-reverse justify-center items-start mt-10 lg:px-[10%] px-[5%]">
+      <div class="">
       
         <div class="faq-container bg-white p-5 relative justify-center">
           <div
@@ -283,7 +283,7 @@
             ></path>
 
         </div>
-        <div class="vertical-text border-text text-[#128546] lg:text-9xl text-[48px] leading-[57.6px] font-bold mr-4">
+        <div class="lg:vertical-text border-text text-[#128546] lg:text-9xl text-[48px] leading-[57.6px] font-bold mr-4">
           FAQ
         </div>
   
@@ -346,7 +346,7 @@
           <img src="/Images/frame23.png" alt="frame23" class="w-full" />
         </div>
       </div>
-    </main>
+    </div>
 
     <footer class="bg-[#EBEBEB] py-12 px-[10%]">
       <div
