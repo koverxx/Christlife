@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Christlife Church</title>
+    <style>
+      .faq-container {
+         border: 2px solid #16a34a;
+         border-radius: 10px;
+         overflow: hidden;
+         position: relative;
+         max-width: 850px;
+         height: fit-content;
+       }
+ 
+       .faq-active .faq-content {
+         display: block;
+       }
+ 
+       .faq-inactive .faq-content {
+         display: none;
+       }
+ 
+       .faq-icon {
+         position: absolute;
+         top: 50%;
+         transform: translateY(-50%);
+         right: -50px;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+       }
+ 
+       .faq-icon svg {
+         transform: rotate(-90deg);
+       }
+       .vertical-text {
+             writing-mode: vertical-rl;
+             transform: rotate(180deg);
+             text-orientation: mixed;
+         }
+         .border-text {
+             -webkit-text-stroke: 1px green;
+             color: white;
+         }
+     </style>
+  </head>
+  <body
+    class="font-urbanist min-h-screen bg-slate-50 dark:bg-[#333333] dark:text-white"
+  >
+    <header
+      class="bg-white text-black flex py-5 items-center justify-between px-[5%]"
+    >
+      <div class="">
+        <img
+          src="Images/logo.png"
+          alt="logo"
+          class="w-[50px] lg:w-[80px] md:w-[60px]"
+        />
+      </div>
+      <div class="md:flex hidden">
+        <nav class="">
+          <ul class="flex items-center">
+            <a href="about.html" class="hover:opacity-90 mb-2 sm:mr-4 px-2"
+              >About</a
+            >
+            <a href="connect.html" class="hover:opacity-90 mb-2 sm:mr-4 px-2"
+              >Connect</a
+            >
+            <a href="sermons.html" class="hover:opacity-90 mb-2 sm:mr-4 px-2"
+              >Sermons</a
+            >
+            <a href="give.html" class="hover:opacity-90 mb-2 sm:mr-4 px-2">Give</a>
+            <a
+              href="visit.html"
+              class="hover:opacity-90 mb-2 sm:mr-4 inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-green-600 border border-transparent rounded-full hover:bg-green-600 focus:outline-none transition duration-150 ease-in-out"
+              >Visit</a
+            >
+          </ul>
+        </nav>
+      </div>
+      <button
+        id="mobile-open-button"
+        class="text-3xl sm:hidden focus:outline-none"
+      >
+        &#9776;
+      </button>
+    </header>
+
+    <main>
+      <div class="">
+        <div class="start flex flex-col items-center justify-center lg:h-screen lg:py-0 py-[10%] mb-[10%] bg-[url('Images/seat.png')] bg-cover" >
+          <h1 class="text-white lg:text-[60px] lg:leading-[72px] text-[32px] leading-[38.4px]">
+            We’re Saving a seat just for you! 
+          </h1>
+        </div>
+
+      <!-- Welcome Section -->
+      <div class="text-center mb-10 flex flex-col lg:flex-row">
+        <h1 class="text-[#333333] text-[32px] leading-[38.4px] lg:text-[64px] lg:leading-[76.8px] font-bold mb-4">Everyone is welcome.</h1>
+        <p class="text-[#333333] text-[16px] leading-[19.2px] lg:text-[24px] lg:leading-[28.8px] max-w-xl mx-auto">At Christlife Family Chapel, everyone is welcome. No matter your background or where you are in your faith, you belong here. Come as you are and join our supportive family.</p>
+    </div>
+
+    <!-- Upcoming Schedule Section -->
+    <section class="text-center mb-10">
+        <h2 class="text-[#333333] text-[32px] leading-[38.4px] lg:text-[55px] lg:leading-[66px] font-bold mb-2">Upcoming Schedule</h2>
+        <p class="text-[#333333] text-[16px] leading-[19.2px] lg:text-[20px] lg:leading-[24px] mb-4">——— Upcoming Events at ChristLife Family Chapel ———</p>
+        <p class="text-[#333333] text-[16px] leading-[19.2px] lg:text-[20px] lg:leading-[24px] max-w-2xl mx-auto mb-10">Stay connected and mark your calendars for our upcoming events and services. We have a variety of activities designed to enrich your spiritual journey and foster community.</p>
+        
+        <div class="flex flex-col lg:flex-row gap-6">
+            <!-- Sunday Service -->
+            <div class="bg-[#D9E5E0] rounded-lg shadow-lg">
+                <img class="w-full rounded-t-lg" src="Images/sunday.png" alt="Sunday Service"> 
+                <div class="p-4">
+                    <h3 class="text-[20px] leading-[24px] 1">Sunday Service</h3>
+                    <p class="text-gray-600">Join us every <strong>Sunday at 9am</strong> for inspiring worship and fellowship.</p>
+                </div>
+            </div>
+
+            <!-- Youth Service -->
+            <div class=" bg-[#D9E5E0] rounded-lg shadow-lg">
+                <img class="w-full rounded-t-lg" src="Images/youth.png" alt="Youth Service"> 
+                    <h3 class="text-[20px] leading-[24px]">Youth Service</h3>
+                    <p class="text-gray-600">Empower and connect with our youth community every <strong>Monday at 7pm</strong>.</p>
+                </div>
+            
+
+            <!-- Teaching Service -->
+            <div class="bg-[#D9E5E0] rounded-lg shadow-lg">
+                <img class="w-full rounded-t-lg" src="Images/teaching.png" alt="Teaching Service">
+                    <h3 class="text-[20px] leading-[24px]">Teaching Service</h3>
+                    <p class="text-gray-600">Deepen your understanding of the Bible every <strong>Tuesday at 7pm</strong>.</p>
+                </div>
+            
+
+            <!-- Midweek Service -->
+            <div class="bg-[#D9E5E0] rounded-lg shadow-lg">
+                <img class="w-full rounded-t-lg" src="Images/midweek.png" alt="Midweek Service"> 
+                    <h3 class="text-[20px] leading-[24px]">Midweek Service</h3>
+                    <p class="text-gray-600">Faith Time— Recharge midweek with our service every <strong>Wednesday at 9am</strong>.</p>
+                </div>
+        </div>
+      </section>
+        
+      <section class="bg-[#128546] py-16">
+        <div class="container mx-auto text-center">
+            <h2 class="text-white text-[32px] leading-[38.4px] lg:text-[55px] lg:leading-[66px] font-semibold mb-10">Testimonials</h2>
+            <div class="flex justify-center space-x-6">
+                <!-- Testimonial Card 1 -->
+                <div class="bg-white p-4 rounded-lg max-w-xs shadow-lg">
+                    <img src="Images/Ellipse1.png" alt="Photo of John Bintu" class="w-[100px] h-[100px] rounded-full mx-auto mb-4">
+                    <p class="text-gray-700 ">“This church has deepened my faith and provided community. Every service leaves me inspired and uplifted.”</p>
+                    <p class="mt-4 text-[#128546] font-semibold">John Bintu</p>
+                </div>
+                <!-- Testimonial Card 2 -->
+                <div class="bg-white p-4 rounded-lg max-w-xs shadow-lg">
+                    <img src="Images/Ellipse2.png" alt="Photo of John Bintu" class="w-[100px] h-[100px] rounded-full mx-auto mb-4">
+                    <p class="text-gray-700">“Christlife Family Chapel has been a beacon of hope for me. The warmth and fellowship I’ve experienced here have transformed my life.”</p>
+                    <p class="mt-4 text-[#128546] font-semibold">John Bintu</p>
+                </div>
+                <!-- Testimonial Card 3 -->
+                <div class="bg-white p-4 rounded-lg max-w-xs shadow-lg">
+                    <img src="Images/Ellipse3.png" alt="Photo of John Bintu" class="w-[100px] h-[100px] rounded-full mx-auto mb-4">
+                    <p class="text-gray-700">“From the inspiring sermons to the supportive community, Christlife Family Chapel feels like home. I’ve found a renewed faith.”</p>
+                    <p class="mt-4 text-[#128546] font-semibold">John Bintu</p>
+                </div>
+            </div>
+            <!-- Navigation Buttons -->
+            <div class="flex justify-center mt-8">
+                <button class="text-white border bg-[#128546] hover:bg-[#128546] rounded-full w-10 h-10 flex items-center justify-center mx-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                    </svg>
+                </button>
+                <button class="text-white border bg-[#128546] hover:bg-[#128546] rounded-full w-10 h-10 flex items-center justify-center mx-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hosting Section -->
+    <section class="container mx-auto my-[10%] flex flex-col lg:flex-row justify-center items-center">
+        <div class="w-1/2 p-8">
+            <h2 class="text-[32px] leading-[38.4px] lg:text-[64px] lg:leading-[76.8px] font-semibold text-gray-800 mb-4">How can we host you well?</h2>
+            <p class="text-[#333333] text-[16px] leading-[19.2px] lg:text-[24px] lg:leading-[28.8px] mb-6">We want your visit to Christlife Family Chapel to be comfortable and welcoming. Let us know how we can best assist you, from finding a seat to providing information about our programs.</p>
+            <button class="bg-[#128546] text-white px-6 py-2 rounded-full">Contact Us</button>
+        </div>
+        <div class="w-1/2">
+            <img src="Images/host.png" alt="Hosting Image" class="rounded-lg object-cover w-[482px] h-[542px]">
+        </div>
+    </section> 
+
+
+    <!-- Stay Connected Section -->
+    <section class="py-16 text-center bg-[#231F20] bg-[url(Images/cover.pn')]">
+      <h2 class="text-white font-semibold mb-4">Stay Connected with Christlife Family Chapel</h2>
+      <p class="mb-10 text-white">Join our community and keep up with the latest news, events, and inspirational content.</p>
+
+      <div class="bg-white text-black px-8 py-6 rounded-lg inline-block">
+          <h3 class="text-lg font-semibold mb-2">Hi there, Let's Connect</h3>
+          <p class="text-gray-600 mb-4">Join our newsletter to stay up to date on all church happenings.</p>
+          <div class="flex items-center space-x-4">
+              <div class="flex items-center bg-gray-100 rounded-lg overflow-hidden">
+                  <select class="bg-gray-100 h-full py-2 px-4 border-none outline-none">
+                      <option value="GH">🇬🇭</option>
+                      <option value="US">🇺🇸</option>
+                      <!-- Add more countries as needed -->
+                  </select>
+                  <input type="text" placeholder="Your Number" class="bg-gray-100 py-2 px-4 border-none outline-none">
+              </div>
+              <button class="bg-green-600 text-white px-4 py-2 rounded-lg">Connect</button>
+          </div>
+      </div>
+  </section>
+
+  <section class="flex flex-col-reverse lg:flex-row justify-center items-start mt-10 lg:px-[10%] px-[5%] py-[8%]">
+    <div class="">
+    
+      <div class="faq-container bg-white p-5 relative justify-center">
+        <div
+          class="flex justify-between items-center mb-4 pb-4 border-b border-[#128546] rounded-lg"
+        >
+          <h2 class="lg:text-[45px] lg:leading-[54px] text-[20px] leading-[24px] font-bold">What time are your Sunday services?</h2>
+          <button
+            class="text-2xl font-bold focus:outline-none faq-button"
+            aria-expanded="true"
+          >x</button>
+        </div>
+        <p class="text-sm text-gray-600 leading-relaxed mb-4 faq-content">
+          Our Sunday services start at 9:00 AM. We also offer additional
+          services throughout the week. Visit page for the full schedule.
+        </p>
+
+        <div
+          class="border border-[#128546] px-4 py-2 flex justify-between items-center cursor-pointer faq-toggle"
+        >
+          <h2 class="lg:text-[45px] lg:leading-[54px] text-[20px] leading-[24px] font-bold text-black">
+            Do you have programs for children and youth?
+          </h2>
+          <button class="text-2xl font-bold focus:outline-none">+</button>
+        </div>
+        <div
+          class="border border-[#128546] px-4 py-2 flex justify-between items-center cursor-pointer faq-toggle"
+        >
+          <h2 class="lg:text-[45px] lg:leading-[54px] text-[20px] leading-[24px] font-bold text-black">
+            How can I get involved in serving at the church?
+          </h2>
+          <button class="text-2xl font-bold focus:outline-none">+</button>
+        </div>
+        <div
+          class="border border-[#128546] px-4 py-2 pt-[2%] flex justify-between items-center cursor-pointer faq-toggle"
+        >
+          <h2 class="lg:text-[45px] lg:leading-[54px] text-[20px] leading-[24px] font-bold text-black">
+            Do you have programs for children and youth?
+          </h2>
+          <button class="text-2xl font-bold focus:outline-none">+</button>
+        </div>
+    </div>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M3 10h1M5 6h1M7 10h1M9 6h1M11 6h1M13 10h1M15 6h1M17 10h1M19 6h1M21 6h1M3 14h1M5 10h1M7 14h1M9 10h1M11 14h1M13 10h1M15 14h1M17 10h1M19 14h1M21 14h1M3 18h1M5 14h1M7 18h1M9 14h1M11 18h1M13 14h1M15 18h1M17 14h1M19 18h1M21 18h1"
+          ></path>
+
+      </div>
+      <div class="vertical-text border-text text-[#128546] lg:text-[160px] lg:leading-[192px] text-[48px] leading-[57.6px] font-bold mr-4">
+        FAQ
+      </div>
+
+    </div>
+  </section>
+
+    </div>
+
+    </main>
+
+    <footer class="bg-[#EBEBEB] py-12 px-[10%]">
+      <div
+        class="flex flex-col lg:flex-row items-start justify-between gap-10 lg:gap-0"
+      >
+        <div>
+          <h1
+            class="lg:text-[48px] lg:leading-[57px] text-[32px] leading-[38px] mb-2 text-[#333333]"
+          >
+            Hi there, Let’s Connect
+          </h1>
+          <p
+            class="lg:text-[20px] lg:leading-[24px] text-[16px] leading-[19px] text-[#333333]"
+          >
+            Join our newsletter to stay up to date on all church happenings.
+          </p>
+
+          <form class="flex flex-col lg:flex-row gap-3 my-3">
+            <div class="flex items-center rounded-full">
+              <button
+                id="dropdown-phone-button"
+                data-dropdown-toggle="dropdown-phone"
+                class="flex-shrink-0 z-10 inline-flex items-center py-2.5 px-4 text-sm font-medium text-center text-gray-900 bg-gray-100 border border-gray-300 rounded-s-full hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-gray-100 dark:bg-gray-700 dark:hover:bg-gray-600 dark:focus:ring-gray-700 dark:text-white dark:border-gray-600"
+                type="button"
+              >
+                <svg
+                  fill="none"
+                  aria-hidden="true"
+                  class="h-4 w-4 me-2"
+                  viewBox="0 0 20 15"
+                >
+                  <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                  <mask
+                    id="a"
+                    style="mask-type: luminance"
+                    width="20"
+                    height="15"
+                    x="0"
+                    y="0"
+                    maskUnits="userSpaceOnUse"
+                  >
+                    <rect width="19.6" height="14" y=".5" fill="#fff" rx="2" />
+                  </mask>
+                  <g mask="url(#a)">
+                    <path
+                      fill="#D02F44"
+                      fill-rule="evenodd"
+                      d="M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z"
+                      clip-rule="evenodd"
+                    />
+                    <path fill="#46467F" d="M0 .5h8.4v6.533H0z" />
+                    <g filter="url(#filter0_d_343_121520)">
+                      <path
+                        fill="url(#paint0_linear_343_121520)"
+                        fill-rule="evenodd"
+                        d="M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z"
+                        clip-rule="evenodd"
+                      />
+                    </g>
+                  </g>
+                  <defs>
+                    <linearGradient
+                      id="paint0_linear_343_121520"
+                      x1=".933"
+                      x2=".933"
+                      y1="1.433"
+                      y2="6.1"
+                      gradientUnits="userSpaceOnUse"
+                    >
+                      <stop stop-color="#fff" />
+                      <stop offset="1" stop-color="#F0F0F0" />
+                    </linearGradient>
+                    <filter
+                      id="filter0_d_343_121520"
+                      width="6.533"
+                      height="5.667"
+                      x=".933"
+                      y="1.433"
+                      color-interpolation-filters="sRGB"
+                      filterUnits="userSpaceOnUse"
+                    >
+                      <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                      <feColorMatrix
+                        in="SourceAlpha"
+                        result="hardAlpha"
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      />
+                      <feOffset dy="1" />
+                      <feColorMatrix
+                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"
+                      />
+                      <feBlend
+                        in2="BackgroundImageFix"
+                        result="effect1_dropShadow_343_121520"
+                      />
+                      <feBlend
+                        in="SourceGraphic"
+                        in2="effect1_dropShadow_343_121520"
+                        result="shape"
+                      />
+                    </filter>
+                  </defs>
+                </svg>
+                +1
+                <svg
+                  class="w-2.5 h-2.5 ms-2.5"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 10 6"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m1 1 4 4 4-4"
+                  />
+                </svg>
+              </button>
+              <div
+                id="dropdown-phone"
+                class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-52 dark:bg-gray-700"
+              >
+                <ul
+                  class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                  aria-labelledby="dropdown-phone-button"
+                >
+                  <li>
+                    <button
+                      type="button"
+                      class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                      role="menuitem"
+                    >
+                      <span class="inline-flex items-center">
+                        <svg
+                          fill="none"
+                          aria-hidden="true"
+                          class="h-4 w-4 me-2"
+                          viewBox="0 0 20 15"
+                        >
+                          <rect
+                            width="19.6"
+                            height="14"
+                            y=".5"
+                            fill="#fff"
+                            rx="2"
+                          />
+                          <mask
+                            id="a"
+                            style="mask-type: luminance"
+                            width="20"
+                            height="15"
+                            x="0"
+                            y="0"
+                            maskUnits="userSpaceOnUse"
+                          >
+                            <rect
+                              width="19.6"
+                              height="14"
+                              y=".5"
+                              fill="#fff"
+                              rx="2"
+                            />
+                          </mask>
+                          <g mask="url(#a)">
+                            <path
+                              fill="#D02F44"
+                              fill-rule="evenodd"
+                              d="M19.6.5H0v.933h19.6V.5zm0 1.867H0V3.3h19.6v-.933zM0 4.233h19.6v.934H0v-.934zM19.6 6.1H0v.933h19.6V6.1zM0 7.967h19.6V8.9H0v-.933zm19.6 1.866H0v.934h19.6v-.934zM0 11.7h19.6v.933H0V11.7zm19.6 1.867H0v.933h19.6v-.933z"
+                              clip-rule="evenodd"
+                            />
+                            <path fill="#46467F" d="M0 .5h8.4v6.533H0z" />
+                            <g filter="url(#filter0_d_343_121520)">
+                              <path
+                                fill="url(#paint0_linear_343_121520)"
+                                fill-rule="evenodd"
+                                d="M1.867 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.866 0a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM7.467 1.9a.467.467 0 11-.934 0 .467.467 0 01.934 0zM2.333 3.3a.467.467 0 100-.933.467.467 0 000 .933zm2.334-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm1.4.467a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.934 0 .467.467 0 01.934 0zm-2.334.466a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.466a.467.467 0 11-.933 0 .467.467 0 01.933 0zM1.4 4.233a.467.467 0 100-.933.467.467 0 000 .933zm1.4.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zm1.4.467a.467.467 0 100-.934.467.467 0 000 .934zM6.533 4.7a.467.467 0 11-.933 0 .467.467 0 01.933 0zM7 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.933 0 .467.467 0 01.933 0zM3.267 6.1a.467.467 0 100-.933.467.467 0 000 .933zm-1.4-.467a.467.467 0 11-.934 0 .467.467 0 01.934 0z"
+                                clip-rule="evenodd"
+                              />
+                            </g>
+                          </g>
+                          <defs>
+                            <linearGradient
+                              id="paint0_linear_343_121520"
+                              x1=".933"
+                              x2=".933"
+                              y1="1.433"
+                              y2="6.1"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stop-color="#fff" />
+                              <stop offset="1" stop-color="#F0F0F0" />
+                            </linearGradient>
+                            <filter
+                              id="filter0_d_343_121520"
+                              width="6.533"
+                              height="5.667"
+                              x=".933"
+                              y="1.433"
+                              color-interpolation-filters="sRGB"
+                              filterUnits="userSpaceOnUse"
+                            >
+                              <feFlood
+                                flood-opacity="0"
+                                result="BackgroundImageFix"
+                              />
+                              <feColorMatrix
+                                in="SourceAlpha"
+                                result="hardAlpha"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                              />
+                              <feOffset dy="1" />
+                              <feColorMatrix
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"
+                              />
+                              <feBlend
+                                in2="BackgroundImageFix"
+                                result="effect1_dropShadow_343_121520"
+                              />
+                              <feBlend
+                                in="SourceGraphic"
+                                in2="effect1_dropShadow_343_121520"
+                                result="shape"
+                              />
+                            </filter>
+                          </defs>
+                        </svg>
+                        United States (+1)
+                      </span>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                      role="menuitem"
+                    >
+                      <span class="inline-flex items-center">
+                        <svg
+                          class="h-4 w-4 me-2"
+                          fill="none"
+                          viewBox="0 0 20 15"
+                        >
+                          <rect
+                            width="19.6"
+                            height="14"
+                            y=".5"
+                            fill="#fff"
+                            rx="2"
+                          />
+                          <mask
+                            id="a"
+                            style="mask-type: luminance"
+                            width="20"
+                            height="15"
+                            x="0"
+                            y="0"
+                            maskUnits="userSpaceOnUse"
+                          >
+                            <rect
+                              width="19.6"
+                              height="14"
+                              y=".5"
+                              fill="#fff"
+                              rx="2"
+                            />
+                          </mask>
+                          <g mask="url(#a)">
+                            <path fill="#0A17A7" d="M0 .5h19.6v14H0z" />
+                            <path
+                              fill="#fff"
+                              fill-rule="evenodd"
+                              d="M-.898-.842L7.467 4.8V-.433h4.667V4.8l8.364-5.642L21.542.706l-6.614 4.46H19.6v4.667h-4.672l6.614 4.46-1.044 1.549-8.365-5.642v5.233H7.467V10.2l-8.365 5.642-1.043-1.548 6.613-4.46H0V5.166h4.672L-1.941.706-.898-.842z"
+                              clip-rule="evenodd"
+                            />
+                            <path
+                              stroke="#DB1F35"
+                              stroke-linecap="round"
+                              stroke-width=".667"
+                              d="M13.067 4.933L21.933-.9M14.009 10.088l7.947 5.357M5.604 4.917L-2.686-.67M6.503 10.024l-9.189 6.093"
+                            />
+                            <path
+                              fill="#E6273E"
+                              fill-rule="evenodd"
+                              d="M0 8.9h8.4v5.6h2.8V8.9h8.4V6.1h-8.4V.5H8.4v5.6H0v2.8z"
+                              clip-rule="evenodd"
+                            />
+                          </g>
+                        </svg>
+                        United Kingdom (+44)
+                      </span>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                      role="menuitem"
+                    >
+                      <span class="inline-flex items-center">
+                        <svg
+                          class="h-4 w-4 me-2"
+                          fill="none"
+                          viewBox="0 0 20 15"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <rect
+                            width="19.6"
+                            height="14"
+                            y=".5"
+                            fill="#fff"
+                            rx="2"
+                          />
+                          <mask
+                            id="a"
+                            style="mask-type: luminance"
+                            width="20"
+                            height="15"
+                            x="0"
+                            y="0"
+                            maskUnits="userSpaceOnUse"
+                          >
+                            <rect
+                              width="19.6"
+                              height="14"
+                              y=".5"
+                              fill="#fff"
+                              rx="2"
+                            />
+                          </mask>
+                          <g mask="url(#a)">
+                            <path fill="#0A17A7" d="M0 .5h19.6v14H0z" />
+                            <path
+                              fill="#fff"
+                              stroke="#fff"
+                              stroke-width=".667"
+                              d="M0 .167h-.901l.684.586 3.15 2.7v.609L-.194 6.295l-.14.1v1.24l.51-.319L3.83 5.033h.73L7.7 7.276a.488.488 0 00.601-.767L5.467 4.08v-.608l2.987-2.134a.667.667 0 00.28-.543V-.1l-.51.318L4.57 2.5h-.73L.66.229.572.167H0z"
+                            />
+                            <path
+                              fill="url(#paint0_linear_374_135177)"
+                              fill-rule="evenodd"
+                              d="M0 2.833V4.7h3.267v2.133c0 .369.298.667.666.667h.534a.667.667 0 00.666-.667V4.7H8.2a.667.667 0 00.667-.667V3.5a.667.667 0 00-.667-.667H5.133V.5H3.267v2.333H0z"
+                              clip-rule="evenodd"
+                            />
+                            <path
+                              fill="url(#paint1_linear_374_135177)"
+                              fill-rule="evenodd"
+                              d="M0 3.3h3.733V.5h.934v2.8H8.4v.933H4.667v2.8h-.934v-2.8H0V3.3z"
+                              clip-rule="evenodd"
+                            />
+                            <path
+                              fill="#fff"
+                              fill-rule="evenodd"
+                              d="M4.2 11.933l-.823.433.157-.916-.666-.65.92-.133.412-.834.411.834.92.134-.665.649.157.916-.823-.433zm9.8.7l-.66.194.194-.66-.194-.66.66.193.66-.193-.193.66.193.66-.66-.194zm0-8.866l-.66.193.194-.66-.194-.66.66.193.66-.193-.193.66.193.66-.66-.193zm2.8 2.8l-.66.193.193-.66-.193-.66.66.193.66-.193-.193.66.193.66-.66-.193zm-5.6.933l-.66.193.193-.66-.193-.66.66.194.66-.194-.193.66.193.66-.66-.193zm4.2 1.167l-.33.096.096-.33-.096-.33.33.097.33-.097-.097.33.097.33-.33-.096z"
+                              clip-rule="evenodd"
+                            />
+                          </g>
+                          <defs>
+                            <linearGradient
+                              id="paint0_linear_374_135177"
+                              x1="0"
+                              x2="0"
+                              y1=".5"
+                              y2="7.5"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stop-color="#fff" />
+                              <stop offset="1" stop-color="#F0F0F0" />
+                            </linearGradient>
+                            <linearGradient
+                              id="paint1_linear_374_135177"
+                              x1="0"
+                              x2="0"
+                              y1=".5"
+                              y2="7.033"
+                              gradientUnits="userSpaceOnUse"
+                            >
+                              <stop stop-color="#FF2E3B" />
+                              <stop offset="1" stop-color="#FC0D1B" />
+                            </linearGradient>
+                          </defs>
+                        </svg>
+                        Australia (+61)
+                      </span>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                      role="menuitem"
+                    >
+                      <span class="inline-flex items-center">
+                        <svg
+                          class="w-4 h-4 me-2"
+                          fill="none"
+                          viewBox="0 0 20 15"
+                        >
+                          <rect
+                            width="19.6"
+                            height="14"
+                            y=".5"
+                            fill="#fff"
+                            rx="2"
+                          />
+                          <mask
+                            id="a"
+                            style="mask-type: luminance"
+                            width="20"
+                            height="15"
+                            x="0"
+                            y="0"
+                            maskUnits="userSpaceOnUse"
+                          >
+                            <rect
+                              width="19.6"
+                              height="14"
+                              y=".5"
+                              fill="#fff"
+                              rx="2"
+                            />
+                          </mask>
+                          <g mask="url(#a)">
+                            <path
+                              fill="#262626"
+                              fill-rule="evenodd"
+                              d="M0 5.167h19.6V.5H0v4.667z"
+                              clip-rule="evenodd"
+                            />
+                            <g filter="url(#filter0_d_374_135180)">
+                              <path
+                                fill="#F01515"
+                                fill-rule="evenodd"
+                                d="M0 9.833h19.6V5.167H0v4.666z"
+                                clip-rule="evenodd"
+                              />
+                            </g>
+                            <g filter="url(#filter1_d_374_135180)">
+                              <path
+                                fill="#FFD521"
+                                fill-rule="evenodd"
+                                d="M0 14.5h19.6V9.833H0V14.5z"
+                                clip-rule="evenodd"
+                              />
+                            </g>
+                          </g>
+                          <defs>
+                            <filter
+                              id="filter0_d_374_135180"
+                              width="19.6"
+                              height="4.667"
+                              x="0"
+                              y="5.167"
+                              color-interpolation-filters="sRGB"
+                              filterUnits="userSpaceOnUse"
+                            >
+                              <feFlood
+                                flood-opacity="0"
+                                result="BackgroundImageFix"
+                              />
+                              <feColorMatrix
+                                in="SourceAlpha"
+                                result="hardAlpha"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                              />
+                              <feOffset />
+                              <feColorMatrix
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"
+                              />
+                              <feBlend
+                                in2="BackgroundImageFix"
+                                result="effect1_dropShadow_374_135180"
+                              />
+                              <feBlend
+                                in="SourceGraphic"
+                                in2="effect1_dropShadow_374_135180"
+                                result="shape"
+                              />
+                            </filter>
+                            <filter
+                              id="filter1_d_374_135180"
+                              width="19.6"
+                              height="4.667"
+                              x="0"
+                              y="9.833"
+                              color-interpolation-filters="sRGB"
+                              filterUnits="userSpaceOnUse"
+                            >
+                              <feFlood
+                                flood-opacity="0"
+                                result="BackgroundImageFix"
+                              />
+                              <feColorMatrix
+                                in="SourceAlpha"
+                                result="hardAlpha"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                              />
+                              <feOffset />
+                              <feColorMatrix
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"
+                              />
+                              <feBlend
+                                in2="BackgroundImageFix"
+                                result="effect1_dropShadow_374_135180"
+                              />
+                              <feBlend
+                                in="SourceGraphic"
+                                in2="effect1_dropShadow_374_135180"
+                                result="shape"
+                              />
+                            </filter>
+                          </defs>
+                        </svg>
+                        Germany (+49)
+                      </span>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                      role="menuitem"
+                    >
+                      <span class="inline-flex items-center">
+                        <svg
+                          class="w-4 h-4 me-2"
+                          fill="none"
+                          viewBox="0 0 20 15"
+                        >
+                          <rect
+                            width="19.1"
+                            height="13.5"
+                            x=".25"
+                            y=".75"
+                            fill="#fff"
+                            stroke="#F5F5F5"
+                            stroke-width=".5"
+                            rx="1.75"
+                          />
+                          <mask
+                            id="a"
+                            style="mask-type: luminance"
+                            width="20"
+                            height="15"
+                            x="0"
+                            y="0"
+                            maskUnits="userSpaceOnUse"
+                          >
+                            <rect
+                              width="19.1"
+                              height="13.5"
+                              x=".25"
+                              y=".75"
+                              fill="#fff"
+                              stroke="#fff"
+                              stroke-width=".5"
+                              rx="1.75"
+                            />
+                          </mask>
+                          <g mask="url(#a)">
+                            <path
+                              fill="#F44653"
+                              d="M13.067.5H19.6v14h-6.533z"
+                            />
+                            <path
+                              fill="#1035BB"
+                              fill-rule="evenodd"
+                              d="M0 14.5h6.533V.5H0v14z"
+                              clip-rule="evenodd"
+                            />
+                          </g>
+                        </svg>
+                        France (+33)
+                      </span>
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      class="inline-flex w-full px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-200 dark:hover:bg-gray-600 dark:hover:text-white"
+                      role="menuitem"
+                    >
+                      <span class="inline-flex items-center">
+                        <svg
+                          class="w-4 h-4 me-2"
+                          fill="none"
+                          viewBox="0 0 20 15"
+                        >
+                          <rect
+                            width="19.6"
+                            height="14"
+                            y=".5"
+                            fill="#fff"
+                            rx="2"
+                          />
+                          <mask
+                            id="a"
+                            style="mask-type: luminance"
+                            width="20"
+                            height="15"
+                            x="0"
+                            y="0"
+                            maskUnits="userSpaceOnUse"
+                          >
+                            <rect
+                              width="19.6"
+                              height="14"
+                              y=".5"
+                              fill="#fff"
+                              rx="2"
+                            />
+                          </mask>
+                          <g mask="url(#a)">
+                            <path
+                              fill="#262626"
+                              fill-rule="evenodd"
+                              d="M0 5.167h19.6V.5H0v4.667z"
+                              clip-rule="evenodd"
+                            />
+                            <g filter="url(#filter0_d_374_135180)">
+                              <path
+                                fill="#F01515"
+                                fill-rule="evenodd"
+                                d="M0 9.833h19.6V5.167H0v4.666z"
+                                clip-rule="evenodd"
+                              />
+                            </g>
+                            <g filter="url(#filter1_d_374_135180)">
+                              <path
+                                fill="#FFD521"
+                                fill-rule="evenodd"
+                                d="M0 14.5h19.6V9.833H0V14.5z"
+                                clip-rule="evenodd"
+                              />
+                            </g>
+                          </g>
+                          <defs>
+                            <filter
+                              id="filter0_d_374_135180"
+                              width="19.6"
+                              height="4.667"
+                              x="0"
+                              y="5.167"
+                              color-interpolation-filters="sRGB"
+                              filterUnits="userSpaceOnUse"
+                            >
+                              <feFlood
+                                flood-opacity="0"
+                                result="BackgroundImageFix"
+                              />
+                              <feColorMatrix
+                                in="SourceAlpha"
+                                result="hardAlpha"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                              />
+                              <feOffset />
+                              <feColorMatrix
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"
+                              />
+                              <feBlend
+                                in2="BackgroundImageFix"
+                                result="effect1_dropShadow_374_135180"
+                              />
+                              <feBlend
+                                in="SourceGraphic"
+                                in2="effect1_dropShadow_374_135180"
+                                result="shape"
+                              />
+                            </filter>
+                            <filter
+                              id="filter1_d_374_135180"
+                              width="19.6"
+                              height="4.667"
+                              x="0"
+                              y="9.833"
+                              color-interpolation-filters="sRGB"
+                              filterUnits="userSpaceOnUse"
+                            >
+                              <feFlood
+                                flood-opacity="0"
+                                result="BackgroundImageFix"
+                              />
+                              <feColorMatrix
+                                in="SourceAlpha"
+                                result="hardAlpha"
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                              />
+                              <feOffset />
+                              <feColorMatrix
+                                values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.06 0"
+                              />
+                              <feBlend
+                                in2="BackgroundImageFix"
+                                result="effect1_dropShadow_374_135180"
+                              />
+                              <feBlend
+                                in="SourceGraphic"
+                                in2="effect1_dropShadow_374_135180"
+                                result="shape"
+                              />
+                            </filter>
+                          </defs>
+                        </svg>
+                        Germany (+49)
+                      </span>
+                    </button>
+                  </li>
+                </ul>
+              </div>
+              <label
+                for="phone-input"
+                class="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white"
+                >Phone number:</label
+              >
+              <div class="relative w-full">
+                <input
+                  type="text"
+                  id="phone-input"
+                  class="block p-2.5 w-full z-20 text-sm text-gray-900 bg-gray-50 rounded-e-full border-s-0 border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-s-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:border-blue-500"
+                  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                  placeholder="123-456-7890"
+                  required
+                />
+              </div>
+            </div>
+            <div>
+              <button class="bg-[#128546] rounded-full text-white px-5 py-2">
+                Sign Up
+              </button>
+            </div>
+          </form>
+          <div class="logo2">
+            <img src="/Images/logo2.png" alt="logo2" />
+          </div>
+        </div>
+
+        <div class="">
+          <h3
+            class="lg:text-[24px] lg:leading-[28px] text-[16px] leading-[19px] mb-5 text-[#333333]"
+          >
+            Christlife Family Chapel
+          </h3>
+          <nav
+            class="grid grid-cols-1 lg:grid-cols-2 gap-y-1 lg:gap-y-0 text-[#333333]"
+          >
+            <a href="about.html">About</a>
+            <a href="connect.html">Connect</a>
+            <a href="sermons.html">Sermons</a>
+            <a href="give.html">Give</a>
+          </nav>
+          <div
+            class="footer-right.social-media-icons flex gap-6 items-center mt-[30%]"
+          >
+            <img
+              src="/Images/youtube.png"
+              alt="youtube"
+              class="w-[35px] h-[35px]"
+            />
+            <img
+              src="/Images/twitter.png"
+              alt="twitter"
+              class="w-[24px] h-[24px]"
+            />
+            <img
+              src="/Images/instagram.png"
+              alt="instagram"
+              class="w-[24px] h-[24px]"
+            />
+            <img
+              src="/Images/facebook.png"
+              alt="facebook"
+              class="w-[24px] h-[24px]"
+            />
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center text-[16px] text-[#333333] mt-3">
+        2024 Christlife Family Chapel, All Rights Reserved
+      </p>
+    </footer>
+
+
+
+  </body>
+
+</html>
