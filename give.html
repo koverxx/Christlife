@@ -8,62 +8,9 @@
       href="https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Christlife Church</title>
-    <style>
-      .rotate-1 {
-        transform: rotate(-7deg);
-      }
-      .rotate-2 {
-        transform: rotate(3deg);
-      }
-      .rotate-3 {
-        transform: rotate(6deg);
-      }
-    </style>
-    <style>
-      .faq-container {
-        border: 2px solid #16a34a;
-        border-radius: 10px;
-        overflow: hidden;
-        position: relative;
-        max-width: 850px;
-        height: fit-content;
-      }
-
-      .faq-active .faq-content {
-        display: block;
-      }
-
-      .faq-inactive .faq-content {
-        display: none;
-      }
-
-      .faq-icon {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: -50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .faq-icon svg {
-        transform: rotate(-90deg);
-      }
-      .vertical-text {
-            writing-mode: vertical-rl;
-            transform: rotate(180deg);
-            text-orientation: mixed;
-        }
-        .border-text {
-            -webkit-text-stroke: 1px green;
-            color: white;
-        }
-    </style>
   </head>
   <body
     class="font-urbanist min-h-screen bg-slate-50 dark:bg-[#333333] dark:text-white"
@@ -107,236 +54,58 @@
       </button>
     </header>
 
-    <main class="pt-0">
-      <div
-        class="flex flex-col items-center justify-center"
-      >
-        <div class="flex p-[5%] gap-5 lg:gap-[5%]">
-          <div class="rotate-1 overflow-hidden rounded-lg shadow-lg">
-            <img
-              src="/Images/connect.png"
-              alt="connect"
-              class="w-[173.18px] h-[224px] lg:w-full lg:h-[473px] object-cover"
-            />
+      
+    <div class="container mx-auto p-6">
+        <div class="text-center">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
+            <div>
+              <p class="text-black text-[16px] leading-[19.2px] lg:text-[20px] lg:leading-[24px] italic">
+                "Give, and it will be given to you. A good measure, pressed down, shaken together
+                and running over, will be poured into your lap. For with the measure you use, it
+                will be measured to you." <br>
+                <strong>Luke 6:38 (NIV)</strong>
+              </p>
+            </div>
+            <div>
+              <h1 class="text-[32px] leading-[38.4px] lg:text-[55px] lg:leading-[66px] font-bold text-[#128546] border-dotted border-t-4 border-b-4 border-[#128546] py-8">
+                Generosity Holds Value
+              </h1>
+              <button class="mt-4 bg-[#128546] text-white py-2 px-6 rounded-full hover:bg-[#128546]">
+                Give Today
+              </button>
+            </div>
+            <div>
+              <p class="text-black text-[16px] leading-[19.2px] lg:text-[20px] lg:leading-[24px] italic">
+                "Each of you should give what you have decided in your heart to give, not reluctantly
+                or under compulsion, for God loves a cheerful giver." <br>
+                <strong>2 Corinthians 9:7 (NIV)</strong>
+              </p>
+            </div>
           </div>
-          <div class="rotate-2 overflow-hidden rounded-lg shadow-lg">
-            <img
-              src="/Images/christlife.png"
-              alt="img2"
-              class="w-[176px] h-[224px] lg:w-full lg:h-[473px] object-cover"
-            />
+    
+          <div class=" mt-[15%] bg-[#128546] py-[5%] pb-[20%] px-5 text-white text-center mb-[10%]">
+            <h2 class="text-[32px] leading-[38.4px] lg:text-[60px] lg:leading-[72px] font-bold mb-8">Ways to Give</h2>
+            <p class="text-[16px] leading-[19.2px] lg:text-[24px] lg:leading-[28.8px]">Partner with Us</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6 px-4">
+              <div class="flex items-center justify-between border bg-[#128546] p-4 rounded-lg hover:bg-[#128546] cursor-pointer">
+                <div class="flex items-center space-x-3">
+                  <img src="Images/mtn.png" alt="Mobile Money" class="w-10"/>
+                  <span class="text-[16px] leading-[19.2px] lg:text-[24px] lg:leading-[28.8px]">Mobile Money</span>
+                </div>
+                <span>&gt;</span>
+              </div>
+              <div class="flex items-center justify-between border bg-[#128546] p-4 rounded-lg  hover:bg-[#128546] cursor-pointer">
+                <div class="flex items-center space-x-3">
+                  <img src="Images/stanbic.png" alt="Bank Payment" class="w-10"/>
+                  <span class="text-[16px] leading-[19.2px] lg:text-[24px] lg:leading-[28.8px]">Bank Payment</span>
+                </div>
+                <span>&gt;</span>
+              </div>
+            </div>
           </div>
-          <div class="rotate-3 overflow-hidden rounded-lg shadow-lg">
-            <img
-              src="/Images/people.png"
-              alt="img3"
-              class="w-[173.18px] h-[224px] lg:w-full lg:h-[473px] object-cover"
-            />
-          </div>
-        </div>
-        <div class="text-center mt-5">
-          <p
-            class="text-[#128546] text-[16px] leading-[19.2px] lg:text-[24px] lg:leading-[28.8px] font-bold mb-4"
-          >
-            Get Connected to Christlife Family Chapel
-          </p>
-          <h1
-            class="text-[#333333] text-[32px] leading-[38.4px] lg:text-[55px] lg:leading-[66px] mb-8"
-          >
-            Bringing people together, one<br />
-            connection at a time.
-          </h1>
         </div>
       </div>
 
-      <section class="text-center lg:my-[10%]">
-        <h1
-          class="text-[#333333] text-[32px] leading-[38.4px] lg:text-[55px] lg:leading-[66px] mb-5"
-        >
-          Move forward now with your next <br> best step.
-        </h1>
-        <p class="text-[#333333]">
-          Ease in gently. Progress with just one step at a time.
-        </p>
-      </section>
-
-      <section class="flex flex-col lg:flex-row justify-around my-10 text-[#128546] gap-8 px-10">
-        <div class="border bg-[#E8F3ED] p-6 py-5 rounded-lg text-left w-[380px] h-[166px] lg:w-[487px] lg:h-[274px]">
-          <h2
-            class="text-[20px] leading-[24px] lg:text-[32px] lg:leading-[38.4px] font-bold text-[#128546] mb-3"
-          >
-            Attend Next Class
-          </h2>
-          <p
-            class="mt-2 text-[14px] leading-[16.8px] lg:text-[20px] lg:leading-[24px] mb-4"
-          >
-            Join us for our next class to deepen your faith and connect with
-            others. Check our schedule and be part of our spiritual journey
-            together.
-          </p>
-          <a href="#" class="text-green-700 mt-4 inline-block font-semibold"
-            >Attend Next Class</a
-          > <button class="w-[24px] h-[24px]">></button>
-        </div>
-        <div class="border bg-[#E8F3ED] p-6 py-5 rounded-lg text-left w-[380px] h-[166px] lg:w-[487px] lg:h-[274px]">
-          <h2
-            class="text-[20px] leading-[24px] lg:text-[32px] lg:leading-[38.4px] font-bold text-[#128546] mb-3"
-          >
-            Join a Group
-          </h2>
-          <p
-            class="mt-2 text-[14px] leading-[16.8px] lg:text-[20px] lg:leading-[24px] mb-4"
-          >
-            Connect with others and grow in your faith by joining one of our
-            small groups. Enjoy fellowship, support, and spiritual growth
-            together.
-          </p>
-          <a href="#" class="text-green-700 mt-4 inline-block font-semibold"
-            >Join a Group</a
-          > <button class="w-[24px] h-[24px]">></button>
-        </div>
-        <div class="border bg-[#E8F3ED] rounded-lg p-6 py-5  text-left w-[380px] h-[166px] lg:w-[487px] lg:h-[274px]">
-          <h2
-            class="text-[20px] leading-[24px] lg:text-[32px] lg:leading-[38.4px] font-bold text-[#128546] mb-3"
-          >
-            Start Serving
-          </h2>
-          <p
-            class="mt-2 text-[14px] leading-[16.8px] lg:text-[20px] lg:leading-[24px] mb-5"
-          >
-            Make a difference by joining our volunteer team. Use your gifts and
-            talents to serve others and grow in faith.
-          </p>
-          <a href="#" class="text-green-700 mt-4 inline-block font-semibold mb-4"
-            >Start Serving</a
-          > <button class="w-[24px] h-[24px]">></button>
-        </div>
-      </section>
-
-      <section class="text-center py-[10%] text-[#333333]">
-        <h2 class="text-3xl font-bold mb-3">Life Stage Community</h2>
-        <p class=" mb-3">
-          Tailored Community for Your Stage of Life
-        </p>
-        
-
-      <section class="flex flex-col lg:flex-row justify-around gap-8 my-10 text-[#333333]">
-        <div class=" mx-4">
-          <div class="w-[295px] h-[261px]">
-          <img
-            src="/Images/children.png"
-            alt="Children"
-            class="rounded-lg shadow-lg"
-          /> </div>
-          <div class="border bg-[#D9E5E0] rounded-lg">
-          <h3 class="text-lg font-bold mt-4">Children</h3>
-          <p class="text-gray-700">
-            Engaging programs for children to learn about God's love and make
-            new friends.
-          </p> </div>
-        </div>
-
-        <div class=" mx-2">
-          <div class="w-[295px] h-[261px]">
-          <img
-            src="/Images/adults.png"
-            alt="Adults"
-            class="rounded-lg shadow-lg"
-          /> </div>
-          <div class="border bg-[#D9E5E0] rounded-lg mx-2">
-          <h3 class="text-lg font-bold mt-4">Adults</h3>
-          <p class="text-gray-700">
-            Join our adult groups for fellowship, support, and community.
-          </p> </div>
-        </div>
-
-        <div class=" mx-2">
-          <div class="w-[295px] h-[261px]">
-          <img
-            src="/Images/fam.png"
-            alt="Family"
-            class="rounded-lg shadow-lg"
-          /> </div>
-          <div class="border bg-[#D9E5E0] rounded-lg">
-          <h3 class="text-lg font-bold mt-4">Family</h3>
-          <p class="text-gray-700">
-            Strengthen your family with our dedicated programs and support.
-          </p> </div>
-        </div>
-
-        <div class=" mx-2">
-          <div class="w-[295px] h-[261px]">
-          <img
-            src="/Images/students.png"
-            alt="Students"
-            class="rounded-lg shadow-lg"
-          /> </div>
-          <div class="border bg-[#D9E5E0] rounded-lg">
-          <h3 class="text-lg font-bold mt-4">Students</h3>
-          <p class="text-gray-700">
-            Connect with fellow students and grow in faith through our dynamic
-            youth ministry.
-          </p> </div>
-        </div>
-      </section>
-    </section>
-
-      <section class="flex flex-col-reverse lg:flex-row justify-center items-start mt-10 lg:px-[10%] px-[5%] mb-[8%]">
-        <div class="">
-        
-          <div class="faq-container bg-white p-5 relative justify-center">
-            <div
-              class="flex justify-between items-center mb-4 pb-4 border-b border-[#128546] rounded-lg"
-            >
-              <h2 class="lg:text-[45px] lg:leading-[54px] text-[20px] leading-[24px] font-bold">What time are your Sunday services?</h2>
-              <button
-                class="text-2xl font-bold focus:outline-none faq-button"
-                aria-expanded="true"
-              >x</button>
-            </div>
-            <p class="text-sm text-gray-600 leading-relaxed mb-4 faq-content">
-              Our Sunday services start at 9:00 AM. We also offer additional
-              services throughout the week. Visit page for the full schedule.
-            </p>
-    
-            <div
-              class="border border-[#128546] px-4 py-2 flex justify-between items-center cursor-pointer faq-toggle"
-            >
-              <h2 class="lg:text-[45px] lg:leading-[54px] text-[20px] leading-[24px] font-bold text-black">
-                Do you have programs for children and youth?
-              </h2>
-              <button class="text-2xl font-bold focus:outline-none">+</button>
-            </div>
-            <div
-              class="border border-[#128546] px-4 py-2 flex justify-between items-center cursor-pointer faq-toggle"
-            >
-              <h2 class="lg:text-[45px] lg:leading-[54px] text-[20px] leading-[24px] font-bold text-black">
-                How can I get involved in serving at the church?
-              </h2>
-              <button class="text-2xl font-bold focus:outline-none">+</button>
-            </div>
-            <div
-              class="border border-[#128546] px-4 py-2 pt-[2%] flex justify-between items-center cursor-pointer faq-toggle"
-            >
-              <h2 class="lg:text-[45px] lg:leading-[54px] text-[20px] leading-[24px] font-bold text-black">
-                Do you have programs for children and youth?
-              </h2>
-              <button class="text-2xl font-bold focus:outline-none">+</button>
-            </div>
-        </div>
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M3 10h1M5 6h1M7 10h1M9 6h1M11 6h1M13 10h1M15 6h1M17 10h1M19 6h1M21 6h1M3 14h1M5 10h1M7 14h1M9 10h1M11 14h1M13 10h1M15 14h1M17 10h1M19 14h1M21 14h1M3 18h1M5 14h1M7 18h1M9 14h1M11 18h1M13 14h1M15 18h1M17 14h1M19 18h1M21 18h1"
-              ></path>
-  
-          </div>
-          <div class="vertical-text  border-text text-[#128546] lg:text-9xl text-[48px] leading-[57.6px] font-bold mr-4">
-            FAQ
-          </div>
-          
-        </div>
-      </section>
 
       <div class="section-five text-center text-2xl font-bold px-4 py-12">
         <h4
@@ -394,7 +163,7 @@
           <img src="/Images/frame23.png" alt="frame23" class="w-full" />
         </div>
       </div>
-    </main>
+    </div>
 
     <footer class="bg-[#EBEBEB] py-12 px-[10%]">
       <div
@@ -1178,23 +947,6 @@
       </p>
     </footer>
 
-    <script>
-      const faqToggles = document.querySelectorAll(".faq-toggle");
-      const faqButtons = document.querySelectorAll(".faq-button");
 
-      faqToggles.forEach((toggle) => {
-        toggle.addEventListener("click", () => {
-          toggle.classList.toggle("faq-active");
-          toggle.classList.toggle("faq-inactive");
-        });
-      });
-
-      faqButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-          document.querySelector(".faq-content").classList.toggle("hidden");
-          button.textContent = button.textContent === "✖" ? "+" : "✖";
-        });
-      });
-    </script>
   </body>
 </html>
